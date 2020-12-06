@@ -4,7 +4,7 @@ from .models import Post, Comment
 
 
 def home(request):
-    posts = Post.objects
+    posts = Post.objects.all().order_by('-date')
 
     return render(request, 'home.html', {'posts': posts})
 
