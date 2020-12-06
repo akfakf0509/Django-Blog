@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/write.css' %}">
+</head>
+<body>
+    <form action="{% url 'create' %}">
+        <h1>제목</h4><input type="text" name="title">
+        <h1>본문</h4><textarea cols="40" rows="10" name="content"></textarea>
+        <input type="password" name="password" placeholder="Password"> <input type="submit" value="등록하기">
+    </form>
+</body>
+</html>

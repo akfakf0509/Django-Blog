@@ -25,7 +25,9 @@ SECRET_KEY = 'v*y*t1((fc4u8c(+pggt$3!*ddn=xcd#5(cghd4n0@o#lvqqtg'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    'myblog.korfly.kro.kr'
+]
 
 
 # Application definition
